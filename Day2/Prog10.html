@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>To check mobile number is of 10 digits or not</p>
+<p id="demo"></p>
+
+<script>
+var x="8433880393";
+check(x);
+
+function check(y){
+var z=y.length;
+if(z==10)
+{
+    document.getElementById("demo").innerHTML="Mobile number " + y + " is a 10 digit number";
+}
+else
+    document.getElementById("demo").innerHTML="Not 10 digits";
+}
+</script>
+</body>
+</html>
+

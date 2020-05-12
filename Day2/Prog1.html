@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>The highest number is <span id="demo"></span>.</p>
+
+<script>
+var num = [20,80,40,50,100,180,30,40,180,85];
+num.sort(function(a, b){return a-b});
+document.getElementById("demo").innerHTML = num[num.length-1];
+</script>
+
+</body>
+</html>
