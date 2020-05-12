@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function highest(a,b,c){
+
+if(a>b)
+  if(c>a)
+    return c;
+  else return a;
+else if(b>c)
+       return b;
+      else return c;
+}
+</script>
+</head>
+<body>
+<p>The highest among the 3 numbers <b>18,78,30</b> is: 
+<p id="demo"></p>
+<script>
+var x=highest(18,78,30);
+document.getElementById("demo").innerHTML = x;
+</script>
+</body>
+</html>
