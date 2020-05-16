@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p><b>To find square and cube using static methods</b></p>
+<label>Enter a number to find square : </label>
+<input type="text" id="square123"/>
+<button type="button" onclick="help()">Click</button><br/><br/>
+<label>Enter a number to find cube : </label>
+<input type="text" id="cube123"/>
+<button type="button" onclick="help1()">Click</button>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+
+class Math{
+  constructor(x){
+      this.num=x;
+  }
+  static square(x){
+      var x1 = x * x;
+      return x1;
+  }
+  
+  static cube(x){
+      var x1 = x * x * x;
+      return x1;
+  }
+}
+function help(){
+  var a = document.getElementById("square123").value;
+  document.getElementById("demo").innerHTML="The square of " + a + " is <b>" + Math.square(a) + "</b>";
+}
+
+function help1(){
+  var b = document.getElementById("cube123").value;
+  document.getElementById("demo1").innerHTML="The cube of " + b + " is <b>" + Math.cube(b) + "</b>";
+}
+</script>
+</body>
+</html>
