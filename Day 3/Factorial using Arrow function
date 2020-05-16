@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Print Factorial of a number</p>
+<p>Enter a number and click on the button below to find the factorial of the entered number</p>
+<label>Enter a number:</label><input type="text" id="demo1"/>
+<button type="button" onclick="help()">Click</button>
+<p id="demo"></p>
+
+<script>
+function help(){
+  var x=document.getElementById("demo1").value;
+  document.getElementById("demo").innerHTML=fact(x);
+}
+var fact;
+fact = (n) => {
+var i;
+for(i=n-1;i>1;i--){
+    n=n*i;
+   }
+    return n;
+}
+
+</script>
+</body>
+</html> 
+ 
